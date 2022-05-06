@@ -6,26 +6,22 @@
     // utilizzare la funzione js che crea un evento quando clicchi su qualcosa
     // collegare all'evento la sovrascrizione del display block del div class hamburger-menu con display none
 
-// quando sono dentro l'ham menù e si allerga la pagina deve tornare a display none
+// quando sono dentro l'ham menù e si allarga la pagina deve tornare a display none
 
 
-const bars = document.querySelector (".fa-bars");
+const bars = document.querySelector ("header div a .fa-bars");
 console.log(bars);
 
-const hamburger = document.querySelector(".hamburger-menu");
-console.log(hamburger);
+// const hamburger = document.querySelector(".hamburger-menu");
+// console.log(hamburger);
 
-const cross = document.querySelector(".fa-times");
+const cross = document.querySelector("header div a .fa-times");
 console.log(cross);
-
-
-
 
 bars.addEventListener("click",
 
     function() {
-
-        hamburger.style.display = "block";
+        document.querySelector(".hamburger-menu").className = "hamburger-menu active";
     }
 );
 
@@ -33,14 +29,23 @@ cross.addEventListener("click",
 
     function() {
 
-        hamburger.style.display = "none";
+        document.querySelector(".hamburger-menu").className = "hamburger-menu";
     }
 );
 
 // bars.addEventListener("click",
 
 //     function() {
-//         // hamburger.style.display = "block";
-//         console.log(hamburger);
+
+//         hamburger.style.display = "block";
 //     }
 // );
+
+// cross.addEventListener("click",
+
+//     function() {
+
+//         hamburger.style.display = "none";
+//     }
+// );
+

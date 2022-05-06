@@ -5,11 +5,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* debug per i miei occhi */
-body{
-    background-color: rgb(97, 81, 81);
-}
-
 header {
     padding: 0 20px;
     width: 100%;
