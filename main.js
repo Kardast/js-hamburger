@@ -9,13 +9,13 @@
 // quando sono dentro l'ham menù e si allarga la pagina deve tornare a display none
 
 
-const bars = document.querySelector ("header div a .fa-bars");
+const bars = document.querySelector (".header-right > a");
 console.log(bars);
 
 // const hamburger = document.querySelector(".hamburger-menu");
 // console.log(hamburger);
 
-const cross = document.querySelector("header div a .fa-times");
+const cross = document.querySelector(".close > i");
 console.log(cross);
 
 bars.addEventListener("click",
